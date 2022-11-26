@@ -1,21 +1,30 @@
 public class Book {
+    private String nameBook;
+    private int yearBook;
 
-    String nameBookMartinEden;
-    int yearBookMartinEden;
 
-    String nameBookMurderOnTheOrientExpress;
-    int yearBookMurderOnTheOrientExpress;
 
-    public Book (String nameBookMartinEden,int yearBookMartinEden,String nameBookMurderOnTheOrientExpress,int yearBookMurderOnTheOrientExpress){
-        this.nameBookMartinEden = nameBookMartinEden;
-        this.yearBookMartinEden = yearBookMartinEden;
-        this.nameBookMurderOnTheOrientExpress = nameBookMurderOnTheOrientExpress;
-        this.yearBookMurderOnTheOrientExpress = yearBookMurderOnTheOrientExpress;
-    }
-    public void setYear (int yearBookMartinEden){
-        this.yearBookMartinEden = yearBookMartinEden;
+
+    public Book () {
+        this.nameBook = "MartinEden";
+        this.yearBook = 1909;
+
+
 
     }
+    public String getNameBook(){
+        return nameBook;
+
+    }
+    public  int getYearBook(){
+        return yearBook;
+    }
+
+    public void setYearBook (int yearBook) {
+        this.yearBook = yearBook;
+    }
+
+
 
 
 
