@@ -10,22 +10,24 @@ public class Main {
 
 
 
-        Author author = new Author("Jack", "London","Agatha", "Christie");
-        System.out.println("nameJack = " + nameJack);
-        System.out.println("surnameLondon = " + surnameLondon);
-        System.out.println("nameAgatha = " + author.getName());
-        System.out.println("surnameChristie = " + author.getSurname());
+        Author Jack = new Author("Jack", "London");
+        System.out.println("nameJack = " + Jack.getName());
+        System.out.println("surnameLondon = " + Jack.getSurname());
+        Author Agatha = new Author("Agatha","Christie");
+        System.out.println("Agatha.getName() = " + Agatha.getName());
+        System.out.println("Agatha.getSurname() = " + Agatha.getSurname());
 
 
-        Book Book = new Book();
-        System.out.println("nameBookMartinEden = " + Book.getNameBook());
-        System.out.println("yearBookMartinEden = " + Book.getYearBook());
-        Book.setYearBook(1910);
-        System.out.println("Book.getYearBook() = " + Book.getYearBook());
+        Book Martin = new Book("MartinEden", 1909);
+        System.out.println("nameBookMartinEden = " + Martin.getNameBook());
+        System.out.println("yearBookMartinEden = " + Martin.getYearBook());
+        Martin.setYearBook(1910);
+        System.out.println("Book.getYearBook() = " + Martin.getYearBook());
+        Book Murder = new Book("MurderOnTheOrientExpress", 1933);
+        System.out.println("Murder.getNameBook() = " + Murder.getNameBook());
+        System.out.println("Murder.getYearBook() = " + Murder.getYearBook());
 
 
-        System.out.println("nameBookMurderOnTheOrientExpress = " + Book.getNameBook());
-        System.out.println("yearBookMurderOnTheOrientExpress = " + yearBookMurderOnTheOrientExpress);
 
 
 

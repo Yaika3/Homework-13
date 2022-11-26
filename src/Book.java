@@ -5,9 +5,10 @@ public class Book {
 
 
 
-    public Book () {
-        this.nameBook = "MartinEden";
-        this.yearBook = 1909;
+    public Book (String nameBook, int yearBook) {
+        this.nameBook = nameBook;
+        this.yearBook = yearBook;
+
 
 
 

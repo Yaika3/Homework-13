@@ -4,10 +4,10 @@ public class Author {
 
 
 
-    public Author(String nameJack, String surnameLondon,String nameAgatha,String surnameChristie) {
+    public Author(String name,String surname) {
 
-        this.name = "Agatha";
-        this.surname = "Christie";
+        this.name = name;
+        this.surname = surname;
 
 
     }
@@ -16,6 +16,7 @@ public class Author {
 
     }
     public String getSurname(){
+
         return surname;
     }
 
