@@ -3,21 +3,32 @@ public class Author {
     private String surname;
 
 
-
     public Author(String name,String surname) {
 
         this.name = name;
         this.surname = surname;
 
 
+
+
     }
+
+    public Author() {
+
+    }
+
+
     public String getName(){
         return name;
+
 
     }
     public String getSurname(){
 
         return surname;
+    }
+    public String toString (){
+        return "Имя автора " + name + " Фамилия автора " + surname;
     }
 
 
