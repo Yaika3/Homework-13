@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Jack = " + Jack);
 
 
-        Book Martin = new Book("Martin Eden", 1909,new Author());
+        Book Martin = new Book("Martin Eden", 1909,new Author(Jack.getName(), Jack.getSurname()));
         System.out.println("nameBookMartinEden = " + Martin.getNameBook());
         System.out.println("yearBookMartinEden = " + Martin.getYearBook());
         Martin.setYearBook(1910);
@@ -25,7 +25,7 @@ public class Main {
         System.out.println("Agatha.getName() = " + Agatha.getName());
         System.out.println("Agatha.getSurname() = " + Agatha.getSurname());
 
-        Book Murder = new Book("Murder On The Orient Express", 1933,new Author());
+        Book Murder = new Book("Murder On The Orient Express", 1933,new Author(Agatha.getName(), Agatha.getSurname()));
         System.out.println("Murder.getNameBook() = " + Murder.getNameBook());
         System.out.println("Murder.getYearBook() = " + Murder.getYearBook());
 
